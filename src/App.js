@@ -5,7 +5,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div></div>
+      <div className="todo">
+        <form>
+          <input></input>
+          <button>Add Task</button>
+        </form>
+      </div>
     );
   }
 }
