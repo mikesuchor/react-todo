@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TodoList.css';
 
-class TodoList extends Component {
+class TodoList extends React.Component {
     render() {
         return (
             <ul>
