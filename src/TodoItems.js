@@ -1,27 +1,36 @@
-import React from "react"; 
-import FlipMove from 'react-flip-move';
+import React from "react"
+import FlipMove from 'react-flip-move'
 
-class TodoItems extends React.Component {  
-  delete = (key) => {     
-    this.props.delete(key);  
+class TodoItems extends React.Component {
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+
+    }
   }
 
-  createTasks = (item) => {    
+
+  delete = (key) => {
+    this.props.delete(key)
+  }
+
+  createTasks = (item) => {
     return <li onClick={() => this.delete(item.key)} key={item.key}>{item.text}</li>
-  }   
+  }
   
-  render() {    
-    let todoEntries = this.props.entries;    
-    let listItems = todoEntries.map(this.createTasks);     
+  render() {
+    let todoEntries = this.props.entries
+    let listItems = todoEntries.map(this.createTasks)
     
-    return (      
+    return (
       <ul className="theList">
-        <FlipMove duration={250} easing="ease-out">      
+        <FlipMove>
           {listItems}
-        </FlipMove>   
+        </FlipMove>
       </ul>
-      );  
-    }
-  } 
+    )
+  }
+}
   
-  export default TodoItems;
+export default TodoItems
