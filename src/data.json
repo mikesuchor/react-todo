@@ -1,0 +1,16 @@
+{
+    "todos": [
+        {
+            "text": "task1",
+            "key": "key1"
+        },
+        {
+            "text": "task2",
+            "key": "key2"
+        },
+        {
+            "text": "task3",
+            "key": "key3"
+        }
+    ]
+}
