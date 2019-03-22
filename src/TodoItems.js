@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import FlipMove from 'react-flip-move'
 
 class TodoItems extends React.Component {
@@ -9,7 +9,6 @@ class TodoItems extends React.Component {
 
     }
   }
-
 
   delete = (key) => {
     this.props.delete(key)
@@ -24,7 +23,7 @@ class TodoItems extends React.Component {
     let listItems = todoEntries.map(this.createTasks)
     
     return (
-      <ul className="theList">
+      <ul className='theList'>
         <FlipMove>
           {listItems}
         </FlipMove>
